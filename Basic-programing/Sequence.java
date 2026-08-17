@@ -1,3 +1,4 @@
+
 public class Sequence {
     public static void main(String[] args) {
         int a = 10;
@@ -7,3 +8,6 @@ public class Sequence {
         System.out.println(sum);
     }
 }
+    
+
+
