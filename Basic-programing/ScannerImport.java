@@ -12,5 +12,7 @@ public class ScannerImport {
         System.out.println("Learner: " + firstName);
         System.out.println("Problems solved: " + solvedProblems);
         System.out.println("Assessment: " + assessmentPercentage);
+
+        sc.close();
     }
 }

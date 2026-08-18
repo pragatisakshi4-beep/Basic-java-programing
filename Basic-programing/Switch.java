@@ -4,39 +4,32 @@ public class Switch {
         char grade = 'A';
 
         switch (grade) {
-
-            case 'A':
+            case 'A' -> {
                 System.out.println("Grade: A");
                 System.out.println("Performance: Excellent");
                 System.out.println("Keep it up!");
-                break;
-
-            case 'B':
+            }
+            case 'B' -> {
                 System.out.println("Grade: B");
                 System.out.println("Performance: Very Good");
                 System.out.println("Good work!");
-                break;
-
-            case 'C':
+            }
+            case 'C' -> {
                 System.out.println("Grade: C");
                 System.out.println("Performance: Good");
                 System.out.println("Need some improvement.");
-                break;
-
-            case 'D':
+            }
+            case 'D' -> {
                 System.out.println("Grade: D");
                 System.out.println("Performance: Average");
                 System.out.println("Work harder.");
-                break;
-
-            case 'F':
+            }
+            case 'F' -> {
                 System.out.println("Grade: F");
                 System.out.println("Result: Fail");
                 System.out.println("Improve your performance.");
-                break;
-
-            default:
-                System.out.println("Invalid Grade");
+            }
+            default -> System.out.println("Invalid Grade");
         }
     }
 }
