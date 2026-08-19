@@ -1,28 +1,27 @@
 
 import java.util.Scanner;
 
-class Student {
-    int id;
-    String name;
-    String course;
-    double javaScore;
-
-    public Student(int id, String name, String course, double javaScore) {
-        this.id = id;
-        this.name = name;
-        this.course = course;
-        this.javaScore = javaScore;
-    }
-
-    public void displayDetails() {
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Course: " + course);
-        System.out.println("JavaScore: " + javaScore);
-    }
-}
-
 public class Main2 {
+    static class Student {
+        int id;
+        String name;
+        String course;
+        double javaScore;
+
+        public Student(int id, String name, String course, double javaScore) {
+            this.id = id;
+            this.name = name;
+            this.course = course;
+            this.javaScore = javaScore;
+        }
+
+        public void displayDetails() {
+            System.out.println("ID: " + id);
+            System.out.println("Name: " + name);
+            System.out.println("Course: " + course);
+            System.out.println("JavaScore: " + javaScore);
+        }
+    }
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int id = scanner.nextInt();
