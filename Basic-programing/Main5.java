@@ -6,7 +6,7 @@ class Learner {
     String name;
     int javaScore;
 
-    // कंस्ट्रक्टर (Constructor)
+    //  (Constructor)
     public Learner(int id, String name, int javaScore) {
         this.id = id;
         this.name = name;
