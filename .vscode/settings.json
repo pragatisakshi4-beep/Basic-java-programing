@@ -1,0 +1,9 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Basic-programing",
+        "Basic-programing/OOPS",
+        "Basic-programing/Arrays",
+        "Basic-programing/MethodsInJava"
+    ]
+}

@@ -7,7 +7,7 @@ public class Array3 {
         // 1. Read the array size
         int size = sc.nextInt();
 
-        // 2. Read and store array elements
+        // 2. Read and store array ele
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
