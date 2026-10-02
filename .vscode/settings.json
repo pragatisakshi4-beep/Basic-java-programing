@@ -3,7 +3,7 @@
     "java.project.sourcePaths": [
         "Basic-programing",
         "Basic-programing/OOPS",
-        "Basic-programing/Arrays",
-        "Basic-programing/MethodsInJava"
+        "Basic-programing/ARRAYS",
+        "Basic-programing/METHODS"
     ]
 }
