@@ -1,5 +1,5 @@
 
-public class Packaged {
+public class RepeatedS {
     public static void main(String[] args) {
 
         String str = "programming";
