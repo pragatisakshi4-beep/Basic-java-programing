@@ -1,4 +1,4 @@
-// 1. Parent Class (Iske aage 'public' nahi lagana hai)
+// Parent Class
 class Developer {
     void work() {
         System.out.println("Developer is working...");
@@ -9,7 +9,7 @@ class Developer {
     }
 }
 
-// 2. Child Class 1 (Iske aage bhi 'public' nahi lagana hai)
+// Child Class 1: JavaDeveloper
 class JavaDeveloper extends Developer {
     @Override
     void work() {
@@ -20,9 +20,14 @@ class JavaDeveloper extends Developer {
     void project() {
         System.out.println("Java Developer is building a Spring Boot project.");
     }
+
+    // Child-specific method
+    void codeInJava() {
+        System.out.println("Writing Spring Boot application.");
+    }
 }
 
-// 3. Child Class 2 (Iske aage bhi 'public' nahi lagana hai)
+// Child Class 2: PythonDeveloper
 class PythonDeveloper extends Developer {
     @Override
     void work() {
@@ -35,7 +40,7 @@ class PythonDeveloper extends Developer {
     }
 }
 
-// 4. Main Class (Sirf yahi class 'public' hogi aur iska naam file name 'JavaDeplover' se match karega)
+// Main Class
 public class JavaDeplover {
     public static void main(String[] args) {
         System.out.println("=== UPCASTING DEMO ===");
@@ -51,5 +56,13 @@ public class JavaDeplover {
         Developer dev2 = new PythonDeveloper();
         dev2.work();    // Output: Python Developer is working on Python code.
         dev2.project(); // Output: Python Developer is building an AI/ML project.
+
+        System.out.println("-----------------------------------");
+
+        // Calling child-specific method using Downcasting:
+        if (dev1 instanceof JavaDeveloper) {
+            JavaDeveloper javaDev = (JavaDeveloper) dev1;
+            javaDev.codeInJava();
+        }
     }
 }
